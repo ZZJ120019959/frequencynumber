@@ -16,6 +16,10 @@ describe("Player", function() {
     var result = Player.main('he is he');
     expect(result).toEqual('he 2\r\nis 1');
   });
+  it("sorted three words",function(){
+    var result = Player.main('he is is');
+    expect(result).toEqual('is 2\r\nhe 1');
+  });
 
 
 });
