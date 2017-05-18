@@ -8,6 +8,10 @@ describe("Player", function() {
   it ("one word", function(){
     expect ( Player.main('he')).toEqual('he 1');
   });
+  it("two different words",function(){
+    var result = Player.main('he is');
+    expect(result).toEqual('he 1\r\nis 1');
+  });
 
 
 });
