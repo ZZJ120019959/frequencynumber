@@ -12,6 +12,10 @@ describe("Player", function() {
     var result = Player.main('he is');
     expect(result).toEqual('he 1\r\nis 1');
   });
+  it("three words",function(){
+    var result = Player.main('he is he');
+    expect(result).toEqual('he 2\r\nis 1');
+  });
 
 
 });
